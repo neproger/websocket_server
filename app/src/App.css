@@ -1,0 +1,179 @@
+::-webkit-scrollbar {
+  width: 0.5em; /* Ширина полосы прокрутки */
+  
+  
+}
+
+/* Стили ползунка полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border: 2px;
+  border-color: #181818;
+  border-style: solid;
+  background-color: #353333; /* Цвет ползунка */
+  border-radius: 0.5em; /* Закругление углов ползунка */
+}
+
+/* Стили трека полосы прокрутки (фоновой области) */
+::-webkit-scrollbar-track {
+  
+  background-color: #181818; /* Цвет трека */
+}
+
+
+body {
+  margin: 0;
+  background-color: #181818;
+  color: #dbe0e4;
+  font-size: 1em;
+  font-family: ZektonRg-Regular, Consolas, 'Courier New',
+      monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 15em;
+  border-radius: 1em;
+}
+
+.App-header {
+  width: 100%;
+  padding-right: 0.2em;
+  height: 2em;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0.1em;
+  justify-content: center;
+}
+
+.App-main {
+  width: 100%;
+  padding-right: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 2.4em;
+  bottom: 3.1em;
+}
+
+.App-footer {
+  width: 100%;
+  padding-right: 0.2em;
+  position: fixed;
+  left: 0;
+  height: 3em;
+  bottom: 0.2em;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 600px;
+  display: flex;
+  
+}
+
+.App-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #352929;
+  min-width: 2em;
+  min-height: 2em;
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  padding: 0.3em;
+  border-radius: 0.2em;
+}
+
+span {
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.input-message {
+  justify-content: start;
+}
+
+.user-name {
+  justify-content: end;
+  width: 5em;
+}
+
+.name {
+  width: 5em;
+}
+
+.message {
+  justify-content: start;
+}
+
+.id {
+  width: 2em;
+}
+
+.date {
+  width: 4em;
+}
+
+.time {
+  width: 4em;
+}
+
+.App-list {
+  width: 100%;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.App-logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 1em;
+  width: 1em;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  display: flex;
+  flex-grow: 1;
+}
+
+.Link:hover {
+  cursor: pointer;
+}
