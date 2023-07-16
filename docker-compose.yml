@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  app:
+    image: app_n
+    build: ./app
+    ports:
+      - 3000:3000
+    networks:
+      - app_server
+
+  server:
+    image: server_n
+    build: ./server
+    ports:
+      - 5000:5000
+    networks:
+      - app_server
+
+networks:
+  app_server:
